@@ -1,0 +1,19 @@
+bool checkPalindrome(char str[]) {
+    // Write your code here
+    int length = strlen(str);
+    int j = length-1;
+    int i=0;
+    while(i<=j){
+        if(str[i]==str[j]){
+            j--;
+            i++;
+        }
+        else{
+            return false;
+        }
+        
+    }
+    
+    return true;
+    
+}
